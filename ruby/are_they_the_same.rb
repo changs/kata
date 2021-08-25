@@ -1,4 +1,3 @@
-require 'pry'
 def comp(array1, array2)
   return false if array1.nil? || array2.nil?
 
