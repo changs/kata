@@ -1,4 +1,3 @@
-require 'pry'
 def stockList(listOfArt, listOfCat)
   r = Hash.new(0)
   listOfArt.each do |art|
