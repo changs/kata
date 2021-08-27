@@ -2,9 +2,7 @@ require 'pry'
 def stockList(listOfArt, listOfCat)
   r = Hash.new(0)
   listOfArt.each do |art|
-    category = art.split[0][0]
-    quantity = art.split[1].to_i
-    r[category] += quantity
+    art.split.tap { |cat, quantity| r[cat[0]] += quantity.to_i }
   end
   listOfCat.map { |cat| "(#{cat} : #{r[cat]})" }.join(' - ')
 end
