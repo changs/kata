@@ -1,4 +1,3 @@
-require 'pry'
 def longest_repetition(chars)
   return ['', 0] if chars.empty?
 
